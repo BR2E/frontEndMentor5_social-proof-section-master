@@ -1,0 +1,76 @@
+.container__header{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px;
+    margin: 80px 60px 0;
+}
+
+.texto__principal h1{
+    text-align: start;
+    font-size: 5.2rem;
+    margin-right: 70px;
+}
+
+
+.texto__principal p{
+    text-align: start;
+    font-size: 1.6rem;
+    margin: 40px 150px 0 0;
+}
+
+
+.stars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box{
+    width: 450px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box p{
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.star{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.box1{
+    align-self: flex-start;
+}
+
+.box3{
+    align-self: flex-end;
+}
+
+/* caja de los perfiles */
+
+.main__footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px;
+    gap: 30px;
+    margin: 0 60px 60px;
+}
+
+.perfil{
+    width: 100%;
+    height: 300px;
+}
+
+.perfil2{
+    align-self: center;
+}
+
+.perfil3{
+    align-self: flex-end;
+}

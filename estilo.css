@@ -18,24 +18,16 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
-    padding: 80px 20px;
-}
-
-/* contenedor principal */
-
-.container{
-    width: 100%;
+    height: 100%;
 }
 
 /* primer contenedor */
 
 .container__header{
-    width: 100%;
-    background-image: url('./images/bg-pattern-top-mobile.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    margin: 80px 30px 30px;
 }
 
 .texto__principal h1{
@@ -43,15 +35,18 @@ body{
     font-size: 3rem;
     font-weight: 700;
     color: var(--VeryDarkMagenta);
+    margin-bottom: 20px;
+    padding-top: 10px;
 }
 
 
 .texto__principal p{
-    margin: 20px 0;
+    /* padding: 30px 0; */
     text-align: center;
     font-size: 1.3rem;
     font-weight: 400;
     color: var(--VeryDarkMagenta);
+    margin: 0 10px;
 }
 
 
@@ -61,14 +56,103 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--LightGrayishMagenta);
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px 0;
 }
 
 .star{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-image: url('./images/icon-star.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.box p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+/* caja de los perfiles */
+
+.main__footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,250px);
+    justify-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.perfil{
+    width: 300px;
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 10px;
+    position: relative;
+}
+
+h2{
+    color: var(--White1);
+    margin: 40px 90px 0;
+    font-size: 1.4rem;
+}
+
+h3{
+    color: var(--SoftPink);
+    margin-left: 90px;
+    font-size: 1.4rem;
+}
+
+.perfil p{
+    color: var(--LightGrayishMagenta);
+    font-size: 1.4rem;
+    margin: 20px ;
+    line-height: 25px;
+}
+
+.img__perfil1{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('./images/image-colton.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+.img__perfil2{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('./images/image-irene.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+.img__perfil3{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('./images/image-anne.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 35px;
+    left: 30px;
 }
